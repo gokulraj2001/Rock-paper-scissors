@@ -10,6 +10,46 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <main>
+        <header>
+            <div>
+                <h1>
+                    <span>Rock</span>
+                    <span>Paper</span>
+                    <span>Scissors</span>
+                </h1>
+            </div>
+            <div>
+                <p>
+                    <strong>Computer:</strong> <span id="computer-score">0</span>
+                </p>
+                <p>
+                    <strong>User:</strong> <span id="user-score">0</span>
+                </p>
+            </div>
+        </header>
+        <section class="hands">
+            <button>
+                <i class="far fa-hand-rock"></i>
+            </button>
+            <button>
+                <i class="far fa-hand-paper"></i>
+            </button>
+            <button>
+                <i class="far fa-hand-scissors"></i>
+            </button>
+        </section>
+        <section class="result">
+            <div class="game-start" id="game-start">
+                <button id="btn-game-start">Start Game</button>
+            </div>
+            <div class="game-result hidden" id="game-result">
+                <p id="computer-choice"></p>
+                <p id="user-choice"></p>
+                <div id="result" class="result-message"></div>
+            </div>
+        </section>
+    </main>
     <script src="./scripts/script.js"></script>
 </body>
 </html>
